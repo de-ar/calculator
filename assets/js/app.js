@@ -1,45 +1,36 @@
-function appendDigit(p) {
-    var a = document.getElementById("screen").value;
-    a = a + p;
-    document.getElementById("screen").value = a;
+function appendToScreen(symbol) {
+    const screen = document.getElementById("screen");
+    screen.value += symbol;
+}
+
+function appendDigit(digit) {
+    appendToScreen(digit);
 }
 
 function pressDivide() {
-    var a = document.getElementById("screen").value;
-    a = a + "/";
-    document.getElementById("screen").value = a;
+    appendToScreen("/");
 }
 
 function pressMultiply() {
-    var a = document.getElementById("screen").value;
-    a = a + "*";
-    document.getElementById("screen").value = a;
+    appendToScreen("*");
 }
 
 function pressAdd() {
-    var a = document.getElementById("screen").value;
-    a = a + "+";
-    document.getElementById("screen").value = a;
+    appendToScreen("+");
 }
 
 function pressSubtract() {
-    var a = document.getElementById("screen").value;
-    a = a + "-";
-    document.getElementById("screen").value = a;
+    appendToScreen("-");
 }
 
 function pressPoint() {
-    var a = document.getElementById("screen").value;
-    a = a + ".";
-    document.getElementById("screen").value = a;
+    appendToScreen(".");
 }
 
 function evaluate() {
-    var a = document.getElementById("screen").value;
-    document.getElementById("result").value = eval(a);
+    document.getElementById("result").value = eval(document.getElementById("screen").value);
 }
 
 function clearScreen() {
-    var a = document.getElementById("screen").value;
-    document.getElementById("screen").value = null;
+    document.getElementById("screen").value = "";
 }

@@ -27,7 +27,7 @@ Open `index.html` directly in a browser, or serve the directory with any static 
 - **Layout is fragile.** The button grid is positioned by manual negative margins in `app.css`, not a real layout. Visual changes mean recalculating offsets, not just adding CSS.
 - **`index.html` is the only map from element id to image file.** Every `<img src>` resolves a role name (`button-7.png`, `frame-top-left.png`, etc.); renaming an image file means updating `index.html` too, and there's no compile-time warning.
 - **No `.gitignore`.** Don't add `node_modules/` etc. — there is no toolchain to produce artifacts.
-- **`var` and inline `onclick`.** The code is intentionally old-style ES5; keep consistent unless refactoring the whole file.
+- **Inline `onclick`.** `index.html` calls `app.js` functions via inline `onclick` attributes, which require those functions to be globals on `window`. Don't wrap them in modules/IIFEs without also touching the HTML.
 
 ## Git
 
