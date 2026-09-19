@@ -27,7 +27,7 @@ function pressPoint() {
     appendToScreen(".");
 }
 
-function evaluate() {
+function pressEquals() {
     document.getElementById("result").value = eval(document.getElementById("screen").value);
 }
 
