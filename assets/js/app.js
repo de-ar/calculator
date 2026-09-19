@@ -1,45 +1,36 @@
-function func1(p) {
-    var a = document.getElementById("screen").value;
-    a = a + p;
-    document.getElementById("screen").value = a;
+function appendToScreen(symbol) {
+    const screen = document.getElementById("screen");
+    screen.value += symbol;
 }
 
-function divsign() {
-    var a = document.getElementById("screen").value;
-    a = a + "/";
-    document.getElementById("screen").value = a;
+function appendDigit(digit) {
+    appendToScreen(digit);
 }
 
-function mulsign() {
-    var a = document.getElementById("screen").value;
-    a = a + "*";
-    document.getElementById("screen").value = a;
+function pressDivide() {
+    appendToScreen("/");
 }
 
-function addsign() {
-    var a = document.getElementById("screen").value;
-    a = a + "+";
-    document.getElementById("screen").value = a;
+function pressMultiply() {
+    appendToScreen("*");
 }
 
-function subsign() {
-    var a = document.getElementById("screen").value;
-    a = a + "-";
-    document.getElementById("screen").value = a;
+function pressAdd() {
+    appendToScreen("+");
 }
 
-function pntsign() {
-    var a = document.getElementById("screen").value;
-    a = a + ".";
-    document.getElementById("screen").value = a;
+function pressSubtract() {
+    appendToScreen("-");
 }
 
-function func2() {
-    var a = document.getElementById("screen").value;
-    document.getElementById("result").value = eval(a);
+function pressPoint() {
+    appendToScreen(".");
 }
 
-function func3() {
-    var a = document.getElementById("screen").value;
-    document.getElementById("screen").value = null;
+function evaluate() {
+    document.getElementById("result").value = eval(document.getElementById("screen").value);
+}
+
+function clearScreen() {
+    document.getElementById("screen").value = "";
 }

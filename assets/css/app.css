@@ -3,24 +3,24 @@
     src: url('../fonts/digital-7.regular.ttf');
 }
 
-#div1 {
+#frame-top-wrap {
     margin: auto;
     width: 375px;
 }
 
-#div2 {
+#frame-top-left-wrap {
     margin: auto;
     width: 375px;
 }
 
-#div3 {
+#screen-frame {
     margin: auto;
     width: 375px;
     margin-top: -57px;
     margin-left: -1px;
 }
 
-#img2 {
+#top-left-casing {
     margin-top: -4px;
 }
 
@@ -46,137 +46,137 @@
     padding: 10px 0px 0px 0px;
 }
 
-#div5 {
+#frame-upper-right {
     margin-top: -73px;
     margin-left: 317px;
 }
 
-#div6 {
+#screen-bottom {
     margin-top: -4px;
 }
 
-#div7 {
+#off-decoration-wrap {
     margin-top: -4px;
 }
 
-#div8 {
+#button-clear-wrap {
     margin-top: -42px;
     margin-left: 218px;
 }
 
-#div9 {
+#frame-filler-1-wrap {
     margin-left: 320px;
     margin-top: -42px;
 }
 
-#div10 {
+#frame-filler-2-wrap {
     margin-top: -4px;
 }
 
-#div11 {
+#frame-filler-3-wrap {
     margin-top: -4px;
 }
 
-#div12 {
+#button-7-wrap {
     margin-top: -224px;
     margin-left: 116px;
 }
 
-#div13 {
+#button-8-wrap {
     margin-top: -50px;
     margin-left: 166px;
 }
 
-#div14 {
+#button-9-wrap {
     margin-top: -50px;
     margin-left: 215px;
 }
 
-#div15 {
+#button-divide-wrap {
     margin-top: -50px;
     margin-left: 263px;
 }
 
-#div16 {
+#frame-filler-4-wrap {
     margin-top: -50px;
     margin-left: 312px;
 }
 
-#div17 {
+#frame-filler-5-wrap {
     margin-top: -4px;
     margin-left: 312px;
 }
 
-#div18 {
+#button-multiply-wrap {
     margin-top: -46px;
     margin-left: 265px;
 }
 
-#div19 {
+#button-6-wrap {
     margin-top: -46px;
     margin-left: 216px;
 }
 
-#div20 {
+#button-5-wrap {
     margin-top: -46px;
     margin-left: 166px;
 }
 
-#div21 {
+#button-4-wrap {
     margin-top: -46px;
     margin-left: 116px;
 }
 
-#div22 {
+#button-1-wrap {
     margin-top: -4px;
     margin-left: 116px;
 }
 
-#div23 {
+#button-2-wrap {
     margin-top: -49px;
     margin-left: 166px;
 }
 
-#div24 {
+#button-3-wrap {
     margin-top: -49px;
     margin-left: 216px;
 }
 
-#div25 {
+#button-subtract-wrap {
     margin-top: -49px;
     margin-left: 265px
 }
 
-#div26 {
+#frame-filler-6-wrap {
     margin-top: -49px;
     margin-left: 313px;
 }
 
-#div27 {
+#frame-filler-7-wrap {
     margin-top: -4px;
     margin-left: 313px;
 }
 
-#div28 {
+#button-add-wrap {
     margin-top: -45px;
     margin-left: 264px;
 }
 
-#div29 {
+#button-equals-wrap {
     margin-top: -45px;
     margin-left: 214px;
 }
 
-#div30 {
+#button-point-wrap {
     margin-top: -45px;
     margin-left: 166px;
 }
 
-#div31 {
+#button-0-wrap {
     margin-top: -45px;
     margin-left: 113px;
 }
 
-#div32 {
+#frame-filler-8-wrap {
     margin-top: -7px;
 }

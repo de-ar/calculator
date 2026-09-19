@@ -6,100 +6,100 @@
     </head>
 
     <body>
-        <div id="div1">
-            <img id="img1" src="./assets/images/1.png" alt="top" />
+        <div id="frame-top-wrap">
+            <img id="top-casing" src="./assets/images/frame-top.png" alt="top" />
         </div>
-        <div class="inner" id="div2">
-            <img id="img2" src="./assets/images/2.png" alt="topLeft" />
-            <div class="inner" id="div3">
-                <div class="inner" id="div4">
+        <div class="inner" id="frame-top-left-wrap">
+            <img id="top-left-casing" src="./assets/images/frame-top-left.png" alt="topLeft" />
+            <div class="inner" id="screen-frame">
+                <div class="inner" id="screen-inputs">
                     <input class="display" id="screen" type="text" />
                     <input class="display" id="result" type="text" />
                 </div>
             </div>
-            <div id="div5">
-                <img src="./assets/images/3.png" alt="upperRight" />
+            <div id="frame-upper-right">
+                <img src="./assets/images/frame-upper-right.png" alt="upperRight" />
             </div>
-            <div id="div6">
-                <img src="./assets/images/4.png" alt="screenBottom" />
+            <div id="screen-bottom">
+                <img src="./assets/images/screen-bottom.png" alt="screenBottom" />
             </div>
-            <div id="div7">
-                <img src="./assets/images/5.png" alt="offbutton" />
+            <div id="off-decoration-wrap">
+                <img src="./assets/images/off-decoration.png" alt="offbutton" />
             </div>
-            <div id="div8">
-                <img src="./assets/images/clr.png" alt="clearButton" onclick="func3()" value="null" />
+            <div id="button-clear-wrap">
+                <img src="./assets/images/button-clear.png" alt="clearButton" onclick="clearScreen()" value="null" />
             </div>
-            <div id="div9">
-                <img src="./assets/images/6.png" />
+            <div id="frame-filler-1-wrap">
+                <img src="./assets/images/frame-filler-1.png" />
             </div>
-            <div id="div10">
-                <img src="./assets/images/7.png" />
+            <div id="frame-filler-2-wrap">
+                <img src="./assets/images/frame-filler-2.png" />
             </div>
-            <div id="div11">
-                <img src="./assets/images/8.png" />
+            <div id="frame-filler-3-wrap">
+                <img src="./assets/images/frame-filler-3.png" />
             </div>
-            <div id="div12">
-                <img src="./assets/images/9.png" alt="number7" onclick="func1(7)" value="7" />
+            <div id="button-7-wrap">
+                <img src="./assets/images/button-7.png" alt="number7" onclick="appendDigit(7)" value="7" />
             </div>
-            <div id="div13">
-                <img src="./assets/images/10.png" alt="number8" onclick="func1(8)" value="8" />
+            <div id="button-8-wrap">
+                <img src="./assets/images/button-8.png" alt="number8" onclick="appendDigit(8)" value="8" />
             </div>
-            <div id="div14">
-                <img src="./assets/images/11.png" alt="number9" onclick="func1(9)" value="9" />
+            <div id="button-9-wrap">
+                <img src="./assets/images/button-9.png" alt="number9" onclick="appendDigit(9)" value="9" />
             </div>
-            <div id="div15">
-                <img src="./assets/images/divide.png" alt="divide" onclick="divsign()" />
+            <div id="button-divide-wrap">
+                <img src="./assets/images/button-divide.png" alt="divide" onclick="pressDivide()" />
             </div>
-            <div id="div16">
-                <img src="./assets/images/12.png" />
+            <div id="frame-filler-4-wrap">
+                <img src="./assets/images/frame-filler-4.png" />
             </div>
-            <div id="div17">
-                <img src="./assets/images/13.png" />
+            <div id="frame-filler-5-wrap">
+                <img src="./assets/images/frame-filler-5.png" />
             </div>
-            <div id="div18">
-                <img src="./assets/images/multiply.png" alt="multiply" onclick="mulsign()" />
+            <div id="button-multiply-wrap">
+                <img src="./assets/images/button-multiply.png" alt="multiply" onclick="pressMultiply()" />
             </div>
-            <div id="div19">
-                <img src="./assets/images/14.png" alt="number6" onclick="func1(6)" />
+            <div id="button-6-wrap">
+                <img src="./assets/images/button-6.png" alt="number6" onclick="appendDigit(6)" />
             </div>
-            <div id="div20">
-                <img src="./assets/images/15.png" alt="number5" onclick="func1(5)" />
+            <div id="button-5-wrap">
+                <img src="./assets/images/button-5.png" alt="number5" onclick="appendDigit(5)" />
             </div>
-            <div id="div21">
-                <img src="./assets/images/16.png" alt="number4" onclick="func1(4)" />
+            <div id="button-4-wrap">
+                <img src="./assets/images/button-4.png" alt="number4" onclick="appendDigit(4)" />
             </div>
-            <div id="div22">
-                <img src="./assets/images/17.png" alt="number1" onclick="func1(1)" />
+            <div id="button-1-wrap">
+                <img src="./assets/images/button-1.png" alt="number1" onclick="appendDigit(1)" />
             </div>
-            <div id="div23">
-                <img src="./assets/images/18.png" alt="number2" onclick="func1(2)" />
+            <div id="button-2-wrap">
+                <img src="./assets/images/button-2.png" alt="number2" onclick="appendDigit(2)" />
             </div>
-            <div id="div24">
-                <img src="./assets/images/19.png" alt="number3" onclick="func1(3)" />
+            <div id="button-3-wrap">
+                <img src="./assets/images/button-3.png" alt="number3" onclick="appendDigit(3)" />
             </div>
-            <div id="div25">
-                <img src="./assets/images/subtract.png" alt="subtract" onclick="subsign()" />
+            <div id="button-subtract-wrap">
+                <img src="./assets/images/button-subtract.png" alt="subtract" onclick="pressSubtract()" />
             </div>
-            <div id="div26">
-                <img src="./assets/images/20.png" />
+            <div id="frame-filler-6-wrap">
+                <img src="./assets/images/frame-filler-6.png" />
             </div>
-            <div id="div27">
-                <img src="./assets/images/21.png" />
+            <div id="frame-filler-7-wrap">
+                <img src="./assets/images/frame-filler-7.png" />
             </div>
-            <div id="div28">
-                <img src="./assets/images/add.png" alt="addition" onclick="addsign()" value="+" />
+            <div id="button-add-wrap">
+                <img src="./assets/images/button-add.png" alt="addition" onclick="pressAdd()" value="+" />
             </div>
-            <div id="div29">
-                <img src="./assets/images/eval.png" alt="equal" onclick="func2()" />
+            <div id="button-equals-wrap">
+                <img src="./assets/images/button-equals.png" alt="equal" onclick="evaluate()" />
             </div>
-            <div id="div30">
-                <img src="./assets/images/point.png" alt="point" onclick="pntsign()" />
+            <div id="button-point-wrap">
+                <img src="./assets/images/button-point.png" alt="point" onclick="pressPoint()" />
             </div>
-            <div id="div31">
-                <img src="./assets/images/22.png" alt="numberzero" onclick="func1(0)" />
+            <div id="button-0-wrap">
+                <img src="./assets/images/button-0.png" alt="numberzero" onclick="appendDigit(0)" />
             </div>
-            <div id="div32">
-                <img src="./assets/images/23.png" />
+            <div id="frame-filler-8-wrap">
+                <img src="./assets/images/frame-filler-8.png" />
             </div>
             <script src="./assets/js/app.js"></script>
     </body>
