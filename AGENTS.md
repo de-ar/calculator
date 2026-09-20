@@ -26,6 +26,7 @@ Open `index.html` directly in a browser, or serve the directory with any static 
 - **`eval()` in `evaluate()`** (`assets/js/app.js:39`) runs whatever is in `#screen`. Fine for a local toy, dangerous if input ever comes from outside the buttons.
 - **Layout is fragile.** The button grid is positioned by manual negative margins in `app.css`, not a real layout. Visual changes mean recalculating offsets, not just adding CSS.
 - **`index.html` is the only map from element id to image file.** Every `<img src>` resolves a role name (`button-7.png`, `frame-top-left.png`, etc.); renaming an image file means updating `index.html` too, and there's no compile-time warning.
+- **Theme.** `:root { color-scheme: light dark; }` plus a dark-mode `@media` block in `app.css` is the only theming — body background flips between browser-default light and `#1a1a1a` dark. The calculator's image slices and LCD color don't change; the user can't switch the casing. Don't add a toggle, and don't add per-asset dark-mode images without also redoing every `<img src>`.
 - **No `.gitignore`.** Don't add `node_modules/` etc. — there is no toolchain to produce artifacts.
 - **Inline `onclick`.** `index.html` calls `app.js` functions via inline `onclick` attributes, which require those functions to be globals on `window`. Don't wrap them in modules/IIFEs without also touching the HTML. Also: don't name a global after `document.*` (e.g. `evaluate`, `getElementById`, `getElementsByTagName`) — inline handler scope puts the document on the scope chain, so the DOM builtin wins.
 

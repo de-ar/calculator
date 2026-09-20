@@ -3,6 +3,16 @@
     src: url('../fonts/digital-7.regular.ttf');
 }
 
+:root {
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+    }
+}
+
 #frame-top-wrap {
     margin: auto;
     width: 375px;
